@@ -1,3 +1,4 @@
+<!-- AUTOMATION VALIDATION: 2026-04-23 - automation of development confirmed for this repo -->
 # ⚠️ DEPRECATED - Forseti Safety Content Module
 
 **STATUS**: This module has been deprecated and renamed to `forseti_content`.
