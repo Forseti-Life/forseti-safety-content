@@ -514,7 +514,8 @@ class ForsetiPagesController extends ControllerBase {
    * Contact page.
    */
   public function contact() {
-    return $this->getContactContent();
+    $url = Url::fromRoute('forseti.talk_with_forseti');
+    return new RedirectResponse($url->toString());
   }
 
   /**
