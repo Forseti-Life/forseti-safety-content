@@ -34,7 +34,18 @@ forseti.talk_with_forseti:
     _controller: '\Drupal\forseti_safety_content\Controller\ForsetiPagesController::talkWithForseti'
     _title: 'Talk with Forseti'
   requirements:
-    _user_is_logged_in: 'TRUE'
+    _permission: 'access content'
+  options:
+    no_cache: TRUE
+
+# Legacy compatibility alias to prevent 404s from older links.
+forseti.talk_with_forseti_legacy:
+  path: '/talk-with-forseti_content'
+  defaults:
+    _controller: '\Drupal\forseti_safety_content\Controller\ForsetiPagesController::talkWithForseti'
+    _title: 'Talk with Forseti'
+  requirements:
+    _permission: 'access content'
   options:
     no_cache: TRUE
 
